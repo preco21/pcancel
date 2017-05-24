@@ -39,13 +39,13 @@ function delay(time) {
 
 Returns a wrapped function that returns object includes `Promise` instance and `cancel()` function.
 
-**Note:** `cancel()` rejects the promise immediately when it called.
-
 You can also specify what error will be returned:
 
 ```javascript
 p.cancel(new Error('Foo')); // Error: Foo
 ```
+
+**Note:** `cancel()` rejects the promise immediately when it called.
 
 ## License
 
