@@ -18,8 +18,8 @@ $ npm install --save pcancel
 ```javascript
 import pcancel from 'pcancel';
 
-const cDelay = pcancel(delay);
-const p = cDelay(6000)
+const delayC = pcancel(delay);
+const p = delayC(4000)
   .promise
   .then(() => console.log('Yey!'))
   .catch((err) => console.error(err));
