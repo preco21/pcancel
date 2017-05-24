@@ -1,0 +1,44 @@
+{
+  "name": "pcancel",
+  "version": "1.0.0",
+  "description": "Cancelable promise made easy",
+  "author": "Plusb Preco <plusb21@gmail.com>",
+  "main": "lib/index.js",
+  "scripts": {
+    "prepublish": "npm run build",
+    "prebuild": "npm run clean",
+    "test": "eslint --ext .js,.jsx --ignore-path .gitignore . && jest",
+    "build": "babel --out-dir lib src",
+    "clean": "rimraf lib"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/preco21/pcancel#readme",
+  "repository": "preco21/pcancel",
+  "bugs": {
+    "url": "https://github.com/preco21/pcancel/issues"
+  },
+  "files": [
+    "lib"
+  ],
+  "keywords": [
+    "p",
+    "promise",
+    "cancel",
+    "cancelable",
+    "cancellable"
+  ],
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-eslint": "^7.2.3",
+    "babel-jest": "^20.0.3",
+    "babel-plugin-add-module-exports": "^0.2.1",
+    "babel-preset-env": "^1.5.1",
+    "babel-preset-stage-1": "^6.24.1",
+    "eslint": "^3.19.0",
+    "eslint-config-prev": "^4.1.0",
+    "eslint-plugin-babel": "^4.1.1",
+    "eslint-plugin-import": "^2.2.0",
+    "jest": "^20.0.3",
+    "rimraf": "^2.6.1"
+  }
+}
