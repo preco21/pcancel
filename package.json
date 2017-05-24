@@ -1,6 +1,6 @@
 {
   "name": "pcancel",
-  "version": "1.0.0",
+  "version": "0.0.0",
   "description": "Wrap promise function into cancelable promise function",
   "author": "Plusb Preco <plusb21@gmail.com>",
   "main": "lib/index.js",
