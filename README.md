@@ -7,6 +7,8 @@
 
 > Wrap promise function into cancelable promise function
 
+Sometimes you may need to create cancelable promise for few situation like to avoid [isMounted antipattern in React](https://facebook.github.io/react/blog/2015/12/16/ismounted-antipattern.html). `pcancel` provides simple utility for creating cancelable promises. Highly inspired from [this comment](https://github.com/facebook/react/issues/5465#issuecomment-157888325).
+
 ## Install
 
 ```bash
