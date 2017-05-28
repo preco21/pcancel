@@ -35,13 +35,15 @@ function delay(time) {
 
 ## API
 
-### pcancel(fn)
+### pcancel(fn[, options])
 
 * `fn` Function - Promise-returning function that will be cancelable.
+* `options` Object (optional)
+  * `noReject` Boolean - Whether to reject when canceling. If this option is `true`, the promise will be resolved with the value passed through to `cancel()` method on the promise.
 
 Returns a wrapped function that returns object includes `Promise` instance and `cancel()` function.
 
-You can also specify what error will be returned:
+You can also specify error or value through `cancel()` method, the specified value will be returned instead of value of the promise:
 
 ```javascript
 p.cancel(new Error('Foo')); // Error: Foo

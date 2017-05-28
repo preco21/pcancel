@@ -31,6 +31,15 @@ describe('`pcancel()` wrapper', () => {
 
     await expect(p.promise).rejects.toEqual(new Error('Promise has canceled'));
   });
+
+  test('should handle `noReject` option', async () => {
+    const delayC = pcancel(delay, {noReject: true});
+    const p = delayC(4000);
+
+    p.cancel(1234);
+
+    await expect(p.promise).resolves.toEqual(1234);
+  });
 });
 
 function delay(time, msg = 'foo') {

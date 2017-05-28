@@ -1,9 +1,12 @@
-function pcancel(fn) {
+function pcancel(fn, {noReject} = {}) {
   return (...args) => {
     let cancel = null;
 
     const promise = new Promise((resolve, reject) => {
-      cancel = (err = createCancellationError()) => reject(err);
+      cancel = (value) => noReject
+        ? resolve(value)
+        : reject(value === undefined ? createCancellationError() : value);
+
       fn(...args).then(resolve).catch(reject);
     });
 
