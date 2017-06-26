@@ -7,7 +7,7 @@
   "scripts": {
     "prepublish": "npm run build",
     "prebuild": "npm run clean",
-    "test": "eslint --ext .js,.jsx --ignore-path .gitignore . && jest",
+    "test": "eslint --ext .js,.jsx && jest",
     "build": "babel --out-dir lib --ignore '**/*.spec.js' src",
     "clean": "rimraf lib"
   },
