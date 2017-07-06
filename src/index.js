@@ -1,4 +1,4 @@
-function pcancel(fn, {noReject} = {}) {
+export default function pcancel(fn, {noReject} = {}) {
   return (...args) => {
     let cancel = null;
 
@@ -23,7 +23,3 @@ function createCancellationError(msg = 'Promise has canceled') {
 
   return err;
 }
-
-export {
-  pcancel as default,
-};
