@@ -12,7 +12,7 @@ Sometimes you may need to create cancelable promise for situation like to avoid 
 ## Install
 
 ```bash
-$ npm install --save pcancel
+$ npm install pcancel
 ```
 
 ## Usage
