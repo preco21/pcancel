@@ -1,9 +1,9 @@
 # pcancel
 
-[![Code Style Prev](https://img.shields.io/badge/code%20style-prev-32c8fc.svg?style=flat-square)](https://github.com/preco21/eslint-config-prev)
-[![NPM Version](https://img.shields.io/npm/v/pcancel.svg?style=flat-square)](https://www.npmjs.com/package/pcancel)
-[![Build Status](https://img.shields.io/travis/preco21/pcancel/master.svg?style=flat-square)](https://travis-ci.org/preco21/pcancel)
-[![Dependency Status](https://dependencyci.com/github/preco21/pcancel/badge?style=flat-square)](https://dependencyci.com/github/preco21/pcancel)
+[![Code Style Prev](https://img.shields.io/badge/code%20style-prev-32c8fc.svg)](https://github.com/preco21/eslint-config-prev)
+[![NPM Version](https://img.shields.io/npm/v/pcancel.svg)](https://www.npmjs.com/package/pcancel)
+[![Build Status](https://travis-ci.org/preco21/pcancel.svg?branch=master)](https://travis-ci.org/preco21/pcancel)
+[![Dependency Status](https://dependencyci.com/github/preco21/pcancel/badge)](https://dependencyci.com/github/preco21/pcancel)
 
 > Wrap promise function into cancelable promise function
 
